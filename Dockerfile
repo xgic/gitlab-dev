@@ -36,7 +36,7 @@ RUN python -m pip install --upgrade pip \
 FROM base AS production
 
 LABEL org.opencontainers.image.title="xgic-gitlab" \
-      org.opencontainers.image.description="Production orchestration image for XGIC GitLab Compose stacks (ghcr.io/xgic/xgic-gitlab). Built by the xgic/gitlab-dev producer; not a Dev Container and not GitLab EE." \
+      org.opencontainers.image.description="Production-ready XGIC orchestration runtime for GitLab Compose stacks: lightweight Python health and ops entrypoint, multi-arch GHCR delivery (ghcr.io/xgic/xgic-gitlab), and a clean companion to official GitLab EE, PostgreSQL, and Redis in the xgic/gitlab template." \
       org.opencontainers.image.url="https://github.com/xgic/gitlab-dev" \
       org.opencontainers.image.documentation="https://github.com/xgic/gitlab-dev#readme" \
       org.opencontainers.image.source="https://github.com/xgic/gitlab-dev" \
