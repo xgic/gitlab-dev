@@ -33,6 +33,24 @@ cd gitlab-dev
 docker build -t ghcr.io/xgic/xgic-gitlab:local --target production .
 ```
 
+## GHCR publish
+
+| Event | Workflow | Registry push |
+|-------|----------|---------------|
+| Pull request | [CI](.github/workflows/ci.yml) (`build-image`) | No (build + health smoke only) |
+| Push to `main` | [Publish GHCR](.github/workflows/publish.yml) (`publish-ghcr`) | Yes — `latest`, `main`, `sha-<short>` |
+| Tag `v*` | Publish GHCR | Yes — semver, `latest`, `sha-<short>` |
+| Manual | `workflow_dispatch` on Publish GHCR | Yes |
+
+Image: **`ghcr.io/xgic/xgic-gitlab`** (product name; not nested under the repo path).
+
+Auth uses the Actions `GITHUB_TOKEN` with `packages: write` (no long-lived registry PAT). After the first successful publish, set the package visibility to **public** under GitHub Packages if pulls should work unauthenticated.
+
+```bash
+# Pull published image (once public)
+docker pull ghcr.io/xgic/xgic-gitlab:latest
+```
+
 Dev Container support will land as contributor tooling in this repository; it does **not** ship as the production image.
 
 ## Related
