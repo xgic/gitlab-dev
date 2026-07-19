@@ -1,0 +1,3 @@
+# Runtime dependencies for the production orchestration image.
+# Keep minimal; pin when promoting beyond scaffold.
+requests>=2.31.0

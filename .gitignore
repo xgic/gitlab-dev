@@ -1,0 +1,31 @@
+# .xgic/ directory for temporary Grok Build status reports (mandatory per new standard).
+# All reports are temporary working artifacts only and must never be committed.
+.xgic/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv-*/
+dist/
+build/
+.coverage
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docker local
+*.log
