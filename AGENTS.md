@@ -10,6 +10,8 @@ Public repository. Follow https://github.com/xgic/ai for multi-repo standards.
 
 ## Rules
 
+
+**Public GitHub writes:** Before `gh issue create|edit`, `gh pr create|edit`, or any public comment on this repository, complete the **mandatory public-safe draft gate** in https://github.com/xgic/ai/blob/main/docs/BASE-STANDARDS-FOR-ORCHESTRATED-REPOS.md (fictional placeholders only; never name private hosts, private projects, or private tracker IDs). Optional helper from the hub clone: `python scripts/public-safe-scan.py path/to/draft.md`.
 - Public-safe content only (no private hosts, private tracker IDs, internal paths).
 - **Configuration over hard-coding:** hosts, tokens, namespace paths, user IDs via env/config or synthetic fixtures.
 - Human code review in the GitHub UI before merge to `main`.
@@ -23,3 +25,4 @@ Public repository. Follow https://github.com/xgic/ai for multi-repo standards.
 
 - Architecture: [ADR-0001](https://github.com/xgic/ai/blob/main/docs/adr/0001-xgic-gitlab-architecture-and-repository-naming.md)
 - Template: https://github.com/xgic/gitlab
+
