@@ -3,6 +3,8 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.14-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-image-blue?logo=docker&logoColor=white)](https://docs.docker.com/)
+[![GHCR](https://img.shields.io/badge/GHCR-xgic--gitlab-blue?logo=github)](https://github.com/users/xgic/packages/container/package/xgic-gitlab)
+[![Release](https://img.shields.io/github/v/release/xgic/gitlab-dev)](https://github.com/xgic/gitlab-dev/releases)
 [![CI](https://github.com/xgic/gitlab-dev/actions/workflows/ci.yml/badge.svg)](https://github.com/xgic/gitlab-dev/actions/workflows/ci.yml)
 
 **Image producer** for the production XGIC GitLab orchestration image
