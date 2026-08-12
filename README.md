@@ -96,9 +96,18 @@ first successful publish, set the package visibility to **public** under GitHub 
 should work unauthenticated.
 
 ```bash
-# Pull published image (once public)
+# Reproducible release pin (recommended for templates and operators)
+docker pull ghcr.io/xgic/xgic-gitlab:0.1.0
+
+# Rolling tip of main (also published as latest after main builds)
 docker pull ghcr.io/xgic/xgic-gitlab:latest
 ```
+
+**Current GitHub Release:** [v0.1.0](https://github.com/xgic/gitlab-dev/releases/tag/v0.1.0)  
+Package: [ghcr.io/xgic/xgic-gitlab](https://github.com/users/xgic/packages/container/package/xgic-gitlab)
+
+Every final semver line must have a **GitHub Release** (not only a tag or GHCR push). See
+[docs/repository-settings.md](docs/repository-settings.md) after the standards PR lands on `main`.
 
 ---
 
