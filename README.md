@@ -66,6 +66,16 @@ The published image is a **production orchestration runtime**:
 Dev Container support may land as **contributor tooling** in this repository; it does **not** ship
 as the production image.
 
+## `xgic gitlab`
+
+`xgic gitlab backup` and `xgic gitlab restore` run on the host that already
+operates the Docker Compose project from
+[xgic/gitlab](https://github.com/xgic/gitlab). This image remains the
+orchestration companion. Those commands are not part of this image, and they
+are not part of the official GitLab EE image. The host reads the GitLab
+config directory and writes the backup directory that Compose mounts into
+GitLab EE.
+
 ---
 
 ## Quick start (build locally)
