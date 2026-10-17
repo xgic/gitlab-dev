@@ -16,7 +16,7 @@ Public repository. Follow https://github.com/xgic/ai for multi-repo standards.
 - **Configuration over hard-coding:** hosts, tokens, namespace paths, user IDs via env/config or synthetic fixtures.
 - Human code review in the GitHub UI before merge to `main`.
 - Dedicated issue-number branches; Conventional Commits.
-- Labels required on issues/PRs; default assignee **`@xgic`** for active work unless explicitly unassigned.
+- **Labels (mandatory):** Every issue and pull request gets exactly one type label in the create call: `bug`, `enhancement`, `documentation`, `standards`, or `chore`. Welcome Discussion posts use `welcome` and `documentation`. Do not put scoped GitLab labels on GitHub. https://github.com/xgic/ai/blob/main/docs/community-health.md#labels-required Default assignee **`@xgic`** unless explicitly unassigned.
 - Before close: complete Markdown checklists; confirm labels and assignee.
 - Python 3.14+ for new code; Apache-2.0; root `CODEOWNERS` (`@xgic`).
 - No Makefiles for environment orchestration.
