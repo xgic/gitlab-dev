@@ -23,6 +23,7 @@ document private bypass tokens or private inventory here.
 | Concern | Policy |
 |---------|--------|
 | **GitHub Release** | Required for every final semver line (`vX.Y.Z`). Tags alone are incomplete. |
+| **Release milestone** | Titled `X.Y.Z`, matching the published version. Set it on every issue and pull request in that release. GitHub does not copy the issue milestone onto the pull request. The candidate and the final publish share it. Close the parent issue, then the milestone, after the final publish and its acceptance. [Work tracking](https://github.com/xgic/ai/blob/main/docs/work-tracking-and-checklists.md). |
 | **Automation** | On `v*` tags, [Publish GHCR](../.github/workflows/publish.yml) pushes multi-arch image tags **and** creates/updates the GitHub Release. |
 | **Prereleases** | Use `vX.Y.ZrcN` (or documented prerelease pattern) with `prerelease: true` when introducing that flow. |
 | **Image** | `ghcr.io/xgic/xgic-gitlab` — package page linked from the README GHCR badge. |

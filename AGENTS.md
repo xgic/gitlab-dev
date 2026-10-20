@@ -20,6 +20,7 @@ Public repository. Follow https://github.com/xgic/ai for multi-repo standards.
 - Before close: complete Markdown checklists; confirm labels and assignee.
 - Python 3.14+ for new code; Apache-2.0; root `CODEOWNERS` (`@xgic`).
 - No Makefiles for environment orchestration.
+- **Release milestone:** titled `X.Y.Z`, matching the published version. The Git tag stays `vX.Y.Z`. Set it on every issue and pull request included in the release. GitHub does not copy the issue milestone onto the pull request. The candidate and the final publish share it. When the shipped version changes, move both to that `X.Y.Z` before the milestone closes. Close the parent issue, then the milestone, after the final publish and its acceptance. https://github.com/xgic/ai/blob/main/docs/work-tracking-and-checklists.md
 
 ## Related
 

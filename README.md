@@ -116,7 +116,7 @@ docker pull ghcr.io/xgic/xgic-gitlab:latest
 **Current GitHub Release:** [v0.1.0](https://github.com/xgic/gitlab-dev/releases/tag/v0.1.0)  
 Package: [ghcr.io/xgic/xgic-gitlab](https://github.com/users/xgic/packages/container/package/xgic-gitlab)
 
-Every final semver line must have a **GitHub Release** (not only a tag or GHCR push). See
+Every final semver line must have a **GitHub Release** (not only a tag or GHCR push). The release milestone is titled `X.Y.Z`, matching the published version, and is set on every issue and pull request in that release. See
 [docs/repository-settings.md](docs/repository-settings.md) after the standards PR lands on `main`.
 
 ---
